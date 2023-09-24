@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+        internal:
+          InstanceMetadataServiceResourceFetcher: error
+cloud:
+  aws:
+    endpoint: http://localhost:4566
+    region:
+      auto: false
+      static: us-east-1
+    stack:
+      auto: false
